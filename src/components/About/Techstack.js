@@ -1,68 +1,65 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { DiJavascript1, DiPython, DiCss3 } from "react-icons/di";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
+  SiAngularjs,
+  SiReact,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiNestjs,
+  SiNodedotjs,
+  SiDjango,
+  SiTypescript,
+  SiApachekafka,
+  SiCsharp,
+  SiDotnet,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
+      {/* Languages */}
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <DiCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCsharp />
+      </Col>
+
+      {/* Frameworks/Libraries */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNestjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNodedotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAngularjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDjango />
+      </Col>
+
+      {/* Tools */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachekafka />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDotnet />
       </Col>
     </Row>
   );
