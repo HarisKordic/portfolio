@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import mosaicpay from "../../Assets/Projects/mosaicpay.png";
 import illuminatingAi from "../../Assets/Projects/gradcam_face_1.jpg";
 import movieRatingApp from "../../Assets/Projects/movie_rating_app.png";
+import fitMl from "../../Assets/Projects/fit_ml.png";
+import startupSuccessIndex from "../../Assets/Projects/startup_success_index.png";
 
 function Projects() {
   return (
@@ -27,6 +29,15 @@ function Projects() {
               ghLink="https://github.com/HarisKordic/final-thesis"
             />
           </Col>
+             <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={startupSuccessIndex}
+              isBlog={false}
+              title="Start-up success index simulator"
+              description="This project shows off a simulation of a Europe based seed funded startup and it's success factor with two variable inputs, amount of money given to the startup and the corruption index of the specific European country the startup is located in."
+              ghLink="https://github.com/HarisKordic/Startup-Success-Index-Simulator"
+            />
+          </Col>
               <Col md={4} className="project-card">
             <ProjectCard
               imgPath={movieRatingApp}
@@ -45,6 +56,16 @@ function Projects() {
               title="MosaicPay"
               description="Bringing together different elements of fintech, such as accounts, transactions, and documents, to provide comprehensive payment solutions."
               ghLink="https://github.com/HarisKordic/MosaicPay-backend"
+            />
+          </Col>
+
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fitMl}
+              isBlog={false}
+              title="FIT ML"
+              description="Creating a small AI prediction model. The model needs to predict ECTS credits for a newly added subject based on ECTS credits from previous relevant subjects and grades from them. The model is based on an unsupervised decision tree classification algorithm."
+              ghLink="https://github.com/HarisKordic/fit-ml"
             />
           </Col>
          
